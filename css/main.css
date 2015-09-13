@@ -5,6 +5,7 @@
  * (C) 2014 www.pivodamian.sk
  * Code: Jozef Butko // www.jozefbutko.com
  * Design: Robert Szabo // cargocollective.com/studiostillsoft
+ * Last Update: 13/09/2015
  *
  *
 */
@@ -145,6 +146,13 @@ a:hover {
   min-height: 100%;
 }
 
+.logo-wrapper {
+  position: fixed;
+  width: 1000px;
+  height: 100%;
+  z-index: -1;
+}
+
 .logo {
   width: 310px;
   height: 194px;
@@ -185,6 +193,10 @@ h3 {
   font-size: 15px;
   margin: 15px 0 2px 0;
   color: #292526; }
+
+h3.trhy {
+  margin-top: 150px;
+}
 
 .pictogram {
   position: absolute;
@@ -297,52 +309,65 @@ h3 {
    ========================================================================== */
 @media only screen and (max-width: 479px) {
   .logo {
-    height: 175px; } }
+    height: 175px;
+  }
+}
 
 @media only screen and (max-width: 767px) {
   html {
-    height: initial; }
+    height: initial;
   }
+}
 
 @media only screen and (min-width: 0) and (max-width: 999px) {
   h2 {
-    line-height: 1; }
+    line-height: 1;
+  }
   h3 {
-    color: #ccc; }
+    color: #ccc;
+  }
   .hero p {
-    color: #fff; }
+    color: #fff;
+  }
   .logo {
-    margin: 40px 0 0 0; }
+    margin: 40px 0 0 0;
+  }
   body {
-    height: auto; }
+    height: auto;
+  }
   .contact {
     margin: 49px 0 40px 0;
-    text-align: right; } }
+    text-align: right;
+  }
+  .logo-wrapper {
+    width: 100%;
+  }
+}
+
 
 @media only screen and (min-width: 1000px) {
   h2 {
-    line-height: 1; }
-
-    body {
-      height: 100%;
-    }
+    line-height: 1;
+  }
+  body {
+    height: 100%;
+  }
   .logo {
-    margin: 80px 0 0 115px; }
-
+    margin: 80px 0 0 115px;
+  }
   .hero p {
     text-align: right;
     position: relative;
     left: -455px;
   }
-
   .container {
     width: 1000px !important;
   }
-
   .container .grid_12 {
-    width: 1000px !important; }
-
+    width: 1000px !important;
+  }
 }
+
 
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { }
 
